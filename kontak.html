@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - CryptoBiz</title>
+    <link rel="stylesheet" href="kode.css">
+</head>
+<body>
+    <header>
+        <h1>CryptoBiz</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="berlangganan.html">Berlangganan</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section class="content">
+        <h2>Kontak Kami</h2>
+        <form action="send_message.php" method="POST">
+            <label>Nama:</label>
+            <input type="text" name="nama" required>
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <label>Pesan:</label>
+            <textarea name="pesan" rows="5" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CryptoBiz. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

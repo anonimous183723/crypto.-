@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlangganan - CryptoBiz</title>
+    <link rel="stylesheet" href="kode.css">
+</head>
+<body>
+    <header>
+        <h1>CryptoBiz</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="berlangganan.html">Berlangganan</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section class="content">
+        <h2>Berlangganan</h2>
+        <p>Pilih paket berlangganan:</p>
+        <ul>
+            <li>1 Bulan: Rp 50.000</li>
+            <li>1 Tahun: Rp 500.000</li>
+        </ul>
+        <p>Pembayaran dapat dilakukan ke salah satu nomor berikut:</p>
+        <ul>
+            <li><b>Dana:</b> 085134119237</li>
+            <li><b>Gopay:</b> 085134119237</li>
+            <li><b>OVO:</b> 085134119237</li>
+        </ul>
+        <p>Setelah melakukan pembayaran, harap unggah bukti pembayaran:</p>
+        <form action="process_payment.php" method="POST" enctype="multipart/form-data">
+            <label>Email Anda:</label>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <label>Unggah Bukti Pembayaran:</label>
+            <input type="file" name="payment-proof" accept="image/*" required>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CryptoBiz. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
